@@ -20,6 +20,12 @@ export default {
         name: "name",
         subtitle: "subtitle",
         curve: "curve",
+      },
+
+      screens: {
+        xs: "320px",   // Extra small devices
+        xm: "375px",   // Custom size between xs and sm
+        xsm: "425px",   // Custom size between xs and sm
       }
     },
   },

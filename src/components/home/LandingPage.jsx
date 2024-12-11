@@ -105,9 +105,9 @@ const LandingPage = ({ id }) => {
                     </div>
                     <div className="w-[350px] overflow-hidden">
                         <div className="flex space-x-4 "    >
-                            <div className="bg-light inverted-radius h-60 p-3 rounded-3xl bg-opacity-10 backdrop-blur-lg">
+                            <div className="bg-light inverted-radius h-60 p-3  rounded-3xl bg-opacity-10 backdrop-blur-lg">
                                 <img
-                                    className="md:min-w-80 min-w-60   inverted-radiusss object-cover object-top h-full select-none rounded-2xl"
+                                    className="md:min-w-80   xs:min-w-60 xm:min-w-72 xsm:min-w-80  inverted-radiusss   object-cover object-top h-full select-none rounded-2xl"
                                     src={Gallery[currentIndex].img}
                                     alt={Gallery[currentIndex].title}
                                     srcset="" 

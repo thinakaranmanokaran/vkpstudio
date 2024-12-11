@@ -38,7 +38,7 @@ const Home = () => {
                 }}
                 whileInView={{
                     width: "100vw",
-                    height: screenWidth <= 315  ? "200vh"  : screenWidth <= 370  ? "300vh"  : screenWidth <= 420  ? "335vh"  : screenWidth <= 600 ? "100vh" : screenWidth > 1000 ? "120vh" : '' , 
+                    height: screenWidth <= 325  ? "300vh"  : screenWidth <= 380  ? "340vh"  : screenWidth <= 430  ? "375vh"  : screenWidth <= 600 ? "100vh" : screenWidth > 1000 ? "120vh" : '' , 
                     borderRadius: "0%",
                     // overflow: "visible",
                 }}
