@@ -14,7 +14,7 @@ const LandingPage = ({ id }) => {
 
     const WelcomeNote = () => {
         const Note = {
-            data: "Life’s most beautiful stories deserve to be captured with care and creativity. Whether it’s the heartfelt vows of a wedding, the joyful chaos of a birthday, or the unforgettable energy of your special events, we are here to turn your moments into cinematic memories. Every click of our camera is a promise to preserve the magic you’ll cherish forever.",
+            data: "Life’s most beautiful stories deserve to be captured with care and creativity. Whether it’s the heartfelt vows of a wedding, the joyful chaos of a birthday, or the unforgettable energy of your special events, we are here to turn your moments into cinematic memories. Every click of our camera is a promise to preserve the magic you’ll cherish forever. !",
         };
  
         const textVariants = {
