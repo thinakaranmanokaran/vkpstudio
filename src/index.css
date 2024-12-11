@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "logo";
+    src: url(./assets/fonts/logo/SPACE.ttf);
+}
+
+@font-face {
+    font-family: "seclogo";
+    src: url(./assets/fonts/logo/couture-bld.otf);
+}
+
+@font-face {
+    font-family: "paragrabh";
+    src: url(./assets/fonts/paragrabh/Urbanist-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "seriff";
+    src: url(./assets/fonts/title/Dolce-Vita.ttf);
+}
+
+@font-face {
+    font-family: "name";
+    src: url(./assets/fonts/title/SF-Pro-Rounded-Bold.otf);
+}
+
+@font-face {
+    font-family: "subtitle";
+    src: url(./assets/fonts/title/SF-Pro-Rounded-Regular.otf);
+}
+
+@font-face {
+    font-family: "curve";
+    src: url(./assets/fonts/title/NewYork.otf);
+}
+
+body{
+    scroll-behavior: auto; /* Or lack of scroll-behavior: smooth */
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+}

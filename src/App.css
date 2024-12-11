@@ -1,0 +1,117 @@
+/* HTML: <div class="inverted-radius"></div> */
+.inverted-radius {
+  --r: 30px; /* the radius */
+  --s: 40px; /* the size of the corner*/
+    
+  aspect-ratio: 1;
+  border-radius: var(--r);
+  --_m:/calc(2*var(--r)) calc(2*var(--r))
+    radial-gradient(#000 70%,#0000 72%) no-repeat;
+    mask:
+    calc(var(--s) + var(--r)) bottom var(--_m),
+    bottom calc(var(--s) + var(--r)) left 0 var(--_m),
+    radial-gradient(var(--s) at 0 100%,#0000 99%,#000 101%) 
+     var(--r) calc(-1*var(--r)) no-repeat,
+    conic-gradient(from 180deg at calc(var(--s) + 2*var(--r)) calc(100% - var(--s) - 2*var(--r)),
+     #0000 25%,#000 0);
+}
+
+/* HTML: <div class="inverted-radius"></div> */
+.inverted-radiusss {
+  --r: 20px; /* the radius */
+  --s: 50px; /* the size of the corner*/
+    
+  aspect-ratio: 1;
+  border-radius: var(--r);
+  --_m:/calc(2*var(--r)) calc(2*var(--r))
+    radial-gradient(#000 70%,#0000 72%) no-repeat;
+    mask:
+    calc(var(--s) + var(--r)) bottom var(--_m),
+    bottom calc(var(--s) + var(--r)) left 0 var(--_m),
+    radial-gradient(var(--s) at 0 100%,#0000 99%,#000 101%) 
+     var(--r) calc(-1*var(--r)) no-repeat,
+    conic-gradient(from 180deg at calc(var(--s) + 2*var(--r)) calc(100% - var(--s) - 2*var(--r)),
+     #0000 25%,#000 0);
+}
+
+.loop {
+  --s: 150px; /* control the size */
+  --b: 25px; /* the border thickness */
+  display: inline-flex;
+  gap: calc((sqrt(2) - 1)*var(--s) - sqrt(2)*var(--b));
+}
+.loop:before,
+.loop:after {
+  content: "";
+  box-shadow: 0 0 0 var(--b) inset #CB9DF0; /* the color */
+  height: var(--s);
+  aspect-ratio: 1;
+  border-radius: 50% 50% 0 50%;
+  rotate: -45deg;
+}
+.loop:after {
+  scale: -1;
+}
+
+
+@keyframes move-right {
+  0% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(10%);
+}}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(50%);
+}}
+
+.animate-move-right {
+  animation: move-right 30s ease-in-out infinite;
+  
+}
+
+.animate-move-left {
+  animation: move-left 30s ease-in-out infinite;
+}
+
+/* CSS */
+.glow-text {
+  /* font-size: 4rem; */
+  color: white;
+  text-shadow: 0 0 10px #fff, 0 0 5px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+@keyframes spin {
+  0%, 30% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(120deg);
+  }
+  70.01%, 100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-move {
+  0% {
+    transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+  }
+  30%, 70% {
+    transform: rotate(calc(var(--s, 1) * 120deg)) translate(calc(var(--s, 1) * -5px), 10px);
+  }
+  100% {
+    transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+  }
+}
