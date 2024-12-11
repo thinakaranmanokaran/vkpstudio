@@ -84,7 +84,7 @@ const About = ({ id }) => {
 						</motion.div>
 
 						<div className=" md:w-1/2 p-4 relative ml-4   ">
-							<motion.div className="absolute left-36  md:left-56 -top-4 md:-top-20 lg:-top-2 lg:left-[35vw] " initial={{ rotate: -45 }} transition={{ duration: 0.3 }} whileInView={{ rotate: 0 }} viewport={{ once: false }} >
+							<motion.div className="absolute left-36  md:left-56 -top-4 xsm:top-2 md:-top-20 lg:-top-2 lg:left-[35vw] " initial={{ rotate: -45 }} transition={{ duration: 0.3 }} whileInView={{ rotate: 0 }} viewport={{ once: false }} >
 								<Quote className={`  `} />
 							</motion.div>
 							<div className="relative h-full flex items-center justify-center mt-56 md:mt-0">
@@ -115,7 +115,7 @@ const About = ({ id }) => {
 									))}
 								</motion.div>
 							</div>
-							<motion.div initial={{ rotate: 135 }} transition={{ duration: 0.3 }} whileInView={{ rotate: 180 }} viewport={{ once: false }} className="absolute left-2 md:left-20 block md:hidden lg:block -bottom-60 lg:-bottom-2 lg:left-0 ">
+							<motion.div initial={{ rotate: 135 }} transition={{ duration: 0.3 }} whileInView={{ rotate: 180 }} viewport={{ once: false }} className="absolute left-2 md:left-20 block md:hidden lg:block xsm:-bottom-52 -bottom-60 lg:-bottom-2 lg:left-0 ">
 								<Quote className={``} />
 							</motion.div>
 						</div>
