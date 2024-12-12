@@ -47,7 +47,7 @@ const Gallery = ({ id }) => {
 		]
 
 		return (
-			<div className=' flex justify-center ' >
+			<div className=' flex justify-center -mt-10 md:mt-0 xs:-ml-4 xm:-ml-6  md:ml-0 ' >
 				<div className=' space-y-3 w-5/6 md:w-[80vw]  ' >
 					<div className='flex flex-col md:flex-row  ' >
 						<div className='p-2 ' >
@@ -70,8 +70,8 @@ const Gallery = ({ id }) => {
 	}
 
 	return (
-		<div className='h-full relative ' id={id} >
-			<div className='sticky z-30 top-10' >
+		<div className='h-full relative mt-12 md:mt-0 ' id={id} >
+			<div className='sticky z-30 top-0 md:top-10' >
 				<div className='text-white text-6xl font-seriff text-center mb-12' >Gallery</div>
 			</div>
 			<div>

@@ -29,7 +29,8 @@ const Home = () => {
             <Navigation />
             <LandingPage id="home" />
             <Testiimonial />
-            <motion.div
+            {
+                screenWidth >= 600 ?             <motion.div
                 className="relative z-30 overflow-hidden left-1/2 -translate-x-1/2"
                 initial={{
                     width: "240px",
@@ -38,7 +39,7 @@ const Home = () => {
                 }}
                 whileInView={{
                     width: "100vw",
-                    height: screenWidth <= 325  ? "300vh"  : screenWidth <= 380  ? "340vh"  : screenWidth <= 430  ? "245vh"  : screenWidth <= 600 ? "100vh" : screenWidth > 1000 ? "120vh" : '' , 
+                    height: "120vh"  , 
                     borderRadius: "0%",
                     // overflow: "visible",
                 }}
@@ -49,7 +50,9 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
             >
                 <Gallery id="gallery" />
-            </motion.div>
+            </motion.div> :
+                <Gallery id="gallery" />
+            }
             <About id="about" />
             <Contact id="contact" />
             <Footer />
